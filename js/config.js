@@ -83,6 +83,7 @@ DW.config = {
   player: {
     volume: 0.6,
     tracks: [
+      { title: 'worry - Slowed', artist: 'LONOWN, riserayss', file: '1.mp3' }
       // { title: 'Track name', artist: 'Artist', file: 'assets/music/track.mp3' }
     ]
   }
