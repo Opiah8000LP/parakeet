@@ -85,6 +85,7 @@ DW.config = {
 
     // title and artist are optional. no title = the file name
     tracks: [
+      { file: '1.mp3', title: 'worry - Slowed', artist: 'LONOWN, riserayss' }
       // '1.mp3',
       // { file: '2.mp3', title: 'Track name', artist: 'Artist' }
     ]
