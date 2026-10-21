@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DWEEB</title>
+<meta name="description" content="DWEEB. Digital identity file.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="assets/favicon.png" id="favicon">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="grain" aria-hidden="true"></div>
+<div id="pulse" aria-hidden="true"></div>
+<div id="rule" aria-hidden="true"></div>
+
+<div class="corner tl tiny" id="c-tl"></div>
+<div class="corner tr tiny" id="c-tr"></div>
+<div class="tiny" id="side">SCROLL 000</div>
+
+<main id="page">
+  <header id="hero">
+    <div id="back" aria-hidden="true"><img id="back-img" alt=""></div>
+    <h1 id="name">DWEEB</h1>
+    <ul id="caption" class="tiny late"></ul>
+    <p class="tiny late" id="scroll-hint">DESCEND</p>
+  </header>
+
+  <div id="sections"></div>
+
+  <footer id="foot">
+    <ul id="links"></ul>
+    <p class="tiny" id="footer-text"></p>
+  </footer>
+</main>
+
+<!-- the player. drag it by the top bar -->
+<aside id="player" aria-label="Music player">
+  <div id="pl-handle">
+    <span id="pl-label" class="tiny">PLAYER</span>
+    <button type="button" id="b-min" aria-label="Minimise"><img alt="" data-icon="min"></button>
+  </div>
+  <div id="pl-body">
+    <div id="pl-art">
+      <img id="cover" alt="" hidden>
+      <span id="cover-empty">00</span>
+    </div>
+    <div id="pl-meta">
+      <span id="pl-title">NO TRACK</span>
+      <span id="pl-artist" class="tiny"></span>
+    </div>
+    <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Seek">
+    <div id="pl-time" class="tiny">00:00 / 00:00</div>
+    <div id="pl-ctrl">
+      <button type="button" id="b-prev" aria-label="Previous"><img alt="" data-icon="prev"></button>
+      <button type="button" id="b-play" aria-label="Play"><img alt="" data-icon="play"></button>
+      <button type="button" id="b-next" aria-label="Next"><img alt="" data-icon="next"></button>
+      <button type="button" id="b-mute" aria-label="Mute"><img alt="" data-icon="volume"></button>
+      <input type="range" id="vol" min="0" max="100" value="60" aria-label="Volume">
+      <button type="button" id="b-list" aria-label="Playlist"><img alt="" data-icon="playlist"></button>
+    </div>
+    <ol id="pl-list" hidden></ol>
+  </div>
+</aside>
+
+<script src="js/config.js"></script>
+<script src="js/redact.js"></script>
+<script src="js/player.js"></script>
+<script src="js/alive.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
