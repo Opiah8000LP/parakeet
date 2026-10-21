@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DWEEB</title>
+<meta name="description" content="DWEEB. Digital identity file.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" type="image/png" href="assets/favicon.png" id="favicon">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="grain" aria-hidden="true"></div>
+<div id="pulse" aria-hidden="true"></div>
+
+<main id="page">
+  <header id="hero">
+    <p class="tiny" id="hero-top">&lt;REDACTED_3&gt; / BIO</p>
+    <h1 id="name">DWEEB</h1>
+    <ul id="caption" class="tiny"></ul>
+    <p class="tiny" id="scroll-hint">SCROLL</p>
+  </header>
+
+  <div id="sections"></div>
+
+  <footer id="foot">
+    <ul id="links"></ul>
+    <p class="tiny" id="footer-text"></p>
+  </footer>
+</main>
+
+<!-- playlist -->
+<aside id="playlist" hidden>
+  <div class="pl-head">
+    <span class="tiny">PLAYLIST</span>
+    <button type="button" id="pl-close" aria-label="Close playlist"><img alt="" data-icon="close"></button>
+  </div>
+  <ol id="pl-list"></ol>
+</aside>
+
+<!-- player -->
+<nav id="player" aria-label="Music player">
+  <div id="pl-seek">
+    <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Seek">
+  </div>
+  <div id="pl-row">
+    <div id="pl-info">
+      <span id="pl-title">NO TRACK</span>
+      <span id="pl-time" class="tiny">00:00 / 00:00</span>
+    </div>
+    <div id="pl-ctrl">
+      <button type="button" id="b-prev" aria-label="Previous"><img alt="" data-icon="prev"></button>
+      <button type="button" id="b-play" aria-label="Play"><img alt="" data-icon="play"></button>
+      <button type="button" id="b-next" aria-label="Next"><img alt="" data-icon="next"></button>
+    </div>
+    <div id="pl-side">
+      <button type="button" id="b-mute" aria-label="Mute"><img alt="" data-icon="volume"></button>
+      <input type="range" id="vol" min="0" max="100" value="60" aria-label="Volume">
+      <button type="button" id="b-list" aria-label="Playlist"><img alt="" data-icon="playlist"></button>
+    </div>
+  </div>
+</nav>
+
+<script src="js/config.js"></script>
+<script src="js/redact.js"></script>
+<script src="js/player.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
